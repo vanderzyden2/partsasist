@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html><head>
+   <title>Volvo PartsASIST – User Guide</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="robots" content="noindex,follow" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ 
+   <!-- This line includes the general project style sheet (not required) -->
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <!-- This block defines the styles of the TOC headings, change them as needed -->
+   <style type="text/css">
+       body { font-size: 1em }
+       .heading1 { color: #000; text-decoration: none; }
+       .heading2 { color: #000; text-decoration: none; }
+       .heading3 { color: #000; text-decoration: none; }
+       .heading4 { color: #000; text-decoration: none; }
+       .heading5 { color: #000; text-decoration: none; }
+       .heading6 { color: #000; text-decoration: none; }
+
+       .hilight1 { color: #FFFFFF; background: #0f4db6; text-decoration: none; }
+       .hilight2 { color: #FFFFFF; background: #0f4db6; text-decoration: none; }
+       .hilight3 { color: #FFFFFF; background: #0f4db6; text-decoration: none; }
+       .hilight4 { color: #FFFFFF; background: #0f4db6; text-decoration: none; }
+       .hilight5 { color: #FFFFFF; background: #0f4db6; text-decoration: none; }
+       .hilight6 { color: #FFFFFF; background: #0f4db6; text-decoration: none; }
+
+       /* TOC LIST CSS */
+       #toc    { padding:0; margin:0 }
+       #toc li { margin-top:2px; margin-left:0; padding:1px }
+       #toc ul { padding-left:0; margin-left:0px }       
+       /* TOC LIST CSS */
+       
+       @media (pointer: coarse) {
+         body    { transform-origin: 0 0;
+		   transform:scale(1.25); 
+		   max-width: 80%;
+       }       
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript">
+   $(document).ready(function(){
+   	   var hiTest = /^hilight/im,
+			parentScope = (parent.hmNavigationFrame);
+		if (parentScope) parent.currentNav("toc");
+		$("a[class^='heading']").on("click",function(event){
+			var doSwipe = (hiTest.test($(this).children("span").first().attr("class")) || false || (parentScope && !parent.hmBrowser.nonDeskTouch));
+			if (doSwipe && parentScope) {
+			window.parent.showNav("toggle");
+			}
+			});
+     });
+   </script>
+      <script type="text/javascript">
+     var parentScope = (parent.hmNavigationFrame);
+     if (!parentScope) {
+		      var s = document.createElement("script");
+		      s.setAttribute("type","text/javascript");
+		      s.setAttribute("src", "helpman_navigation.js");
+		      document.getElementsByTagName("head")[0].appendChild(s);
+	    }
+     else {
+       if (initialtocstate != "expandall") parent.hmAddCss(document, "#toc li ul { display: none }");
+     }
+     function loadicons() { var icons = new Array(); for (i=0; i<arguments.length; i++) { icons[i] = new Image(); icons[i].src = arguments[i]; } }
+     function loadtoc() { if (parentScope) parent.loadstate(document.getElementById("toc")); else loadstate(document.getElementById("toc")); }
+     function savetoc() { if (parentScope) parent.savestate(document.getElementById("toc")); else savestate(document.getElementById("toc")); }
+     function clicked(node, event) { deselect(); if (parentScope) parent.hmNodeClicked(node, event); else hmNodeClicked(node, event); }
+     function dblclicked(node) { if (parentScope) parent.hmNodeDblclicked(node); else hmNodeDblclicked(node); }
+     function deselect() { if (window.getSelection) window.getSelection().removeAllRanges(); else if (document.selection) document.selection.empty(); }
+     $(document).ready(function(){
+       loadtoc();
+       $(window).onunload = savetoc;
+     });
+   </script>
+</head>
+<body>
+<ul id="toc" style="list-style-type:none;display:block;padding-left:0">
+<li class="heading1" id="i1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a1" href="introduction.html" target="hmcontent"><span class="heading1" id="s1">Welcome to PartsASIST</span></a>
+</li>
+<li class="heading1" id="i2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a2" href="home-page-overview.html" target="hmcontent"><span class="heading1" id="s2">Home Page</span></a>
+</li>
+<li class="heading1" id="i3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a3" href="glossary.html" target="hmcontent"><span class="heading1" id="s3">Glossary</span></a>
+</li>
+<li class="heading1" id="i4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a4" href="navigation-bar.html" target="hmcontent"><span class="heading1" id="s4">Navigation bar</span></a>
+</li>
+<li class="heading1" id="i5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a5" href="quick-start---search--filter.html" target="hmcontent"><span class="heading1" id="s5">Quick Start - Search in the Search bar</span></a>
+</li>
+<li class="heading1" id="i6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a6" href="quick-start---search-in-the-ca.html" target="hmcontent"><span class="heading1" id="s6">Quick Start - Search from the Product Menu</span></a>
+</li>
+<li class="heading1" id="i7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a7" href="quick-start---search-from-cata.html" target="hmcontent"><span class="heading1" id="s7">Quick Start - Search from Catalog Icons</span></a>
+</li>
+<li class="heading1" id="i8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a8" href="quick-start---place-an-order.html" target="hmcontent"><span class="heading1" id="s8">Quick Start - Place an Order with a Part Number&nbsp;</span></a>
+</li>
+<li class="heading1" id="i9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a9" href="search.html" target="hmcontent"><span class="heading1" id="s9">Advanced Search &amp; Filtering</span></a>
+</li>
+<li class="heading1" id="i10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a10" href="mini-cart.html" target="hmcontent"><span class="heading1" id="s10">Mini cart</span></a>
+</li>
+<li class="heading1" id="i11" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a11" href="product-information.html" target="hmcontent"><span class="heading1" id="s11" ondblclick="return dblclicked(this)">Catalog</span></a>
+<ul id="ul11" style="list-style-type:none">
+<li class="heading2" id="i11.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a11.1" href="my-fleet.html" target="hmcontent"><span class="heading2" id="s11.1">My Fleet</span></a>
+</li>
+<li class="heading2" id="i11.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a11.2" href="genuine-parts.html" target="hmcontent"><span class="heading2" id="s11.2">Shop Genuine Parts</span></a>
+</li>
+<li class="heading2" id="i11.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a11.3" href="all-makes.html" target="hmcontent"><span class="heading2" id="s11.3">Explore All Makes</span></a>
+</li>
+<li class="heading2" id="i11.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a11.4" href="promotions.html" target="hmcontent"><span class="heading2" id="s11.4">Promotions / Shop Special Offers</span></a>
+</li>
+<li class="heading2" id="i11.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a11.5" href="local-catalog.html" target="hmcontent"><span class="heading2" id="s11.5">Local / Dealer Catalog (if available)</span></a>
+</li>
+<li class="heading2" id="i11.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a11.6" href="fleet-catalog-(if-available).html" target="hmcontent"><span class="heading2" id="s11.6">Fleet Catalog (if available)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i12" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a12" href="orders.html" target="hmcontent"><span class="heading1" id="s12" ondblclick="return dblclicked(this)">Orders</span></a>
+<ul id="ul12" style="list-style-type:none">
+<li class="heading2" id="i12.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a12.1" href="edit-cart.html" target="hmcontent"><span class="heading2" id="s12.1">Edit Cart</span></a>
+</li>
+<li class="heading2" id="i12.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a12.2" href="check-out.html" target="hmcontent"><span class="heading2" id="s12.2">Check out</span></a>
+</li>
+<li class="heading2" id="i12.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a12.3" href="order-information.html" target="hmcontent"><span class="heading2" id="s12.3">Order Information</span></a>
+</li>
+<li class="heading2" id="i12.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a12.4" href="request-for-quote.html" target="hmcontent"><span class="heading2" id="s12.4">Request For Quote</span></a>
+</li>
+<li class="heading2" id="i12.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a12.5" href="quick-order.html" target="hmcontent"><span class="heading2" id="s12.5">Quick Order</span></a>
+</li>
+<li class="heading2" id="i12.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a12.6" href="saved-list.html" target="hmcontent"><span class="heading2" id="s12.6">Saved List</span></a>
+</li>
+<li class="heading2" id="i12.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a12.7" href="upload-file.html" target="hmcontent"><span class="heading2" id="s12.7">Upload File</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i13" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a13" href="customer-services.html" target="hmcontent"><span class="heading1" id="s13" ondblclick="return dblclicked(this)">Customer Services</span></a>
+<ul id="ul13" style="list-style-type:none">
+<li class="heading2" id="i13.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a13.1" href="your-profile.html" target="hmcontent"><span class="heading2" id="s13.1">Your Profile</span></a>
+</li>
+<li class="heading2" id="i13.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a13.2" href="company-information.html" target="hmcontent"><span class="heading2" id="s13.2">Company Information</span></a>
+</li>
+<li class="heading2" id="i13.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a13.3" href="company-user-management.html" target="hmcontent"><span class="heading2" id="s13.3">Company User Management</span></a>
+</li>
+<li class="heading2" id="i13.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a13.4" href="approval-tree.html" target="hmcontent"><span class="heading2" id="s13.4">Approval Tree</span></a>
+</li>
+<li class="heading2" id="i13.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a13.5" href="terms-and-conditions.html" target="hmcontent"><span class="heading2" id="s13.5">Terms and Conditions</span></a>
+</li>
+<li class="heading2" id="i13.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a13.6" href="manage-my-fleet.html" target="hmcontent"><span class="heading2" id="s13.6">Manage My Fleet</span></a>
+</li>
+<li class="heading2" id="i13.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a13.7" href="configure-upload-file.html" target="hmcontent"><span class="heading2" id="s13.7">Configure Upload File</span></a>
+</li>
+<li class="heading2" id="i13.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a13.8" href="contact-us.html" target="hmcontent"><span class="heading2" id="s13.8">Contact Us</span></a>
+</li>
+</ul>
+</li>
+</ul>
+<script type="text/javascript">loadicons('cicon9.png','cicon2.png','cicon1.png');</script>
+</body>
+</html>
