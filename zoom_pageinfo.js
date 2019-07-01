@@ -42,7 +42,7 @@ pagedata = [ ["./accessing-partsasist.html","Accessing PartsASIST","Trucks Custo
 ["./cart.html","Cart","The cart contains all of the parts that a user is considering for purchase. In the cart, the availability of the parts is shown, along with any di...",""],
 ["./check-out.html","Orders &#62; Check out","The check out is the final step in submitting an order. All prices, discounts and tax are added and the final cost for the order is summarized.&#38;nb...",""],
 ["./company-information.html","Customer Services &#62; Company Information","This page displays company information in several sections, including:",""],
-["./company-user-management.html","Customer Services &#62; Company User Management","As a PartsASIST administrator, you can send an invitation to others within your fleet to join PartsASIST from the portal.",""],
+["./company-user-management.html","Customer Services &#62; Company User Management","As a primary user in PartsASIST, you can invite others from your company to join PartsASIST. You can only invite a person who has a current Trucks...",""],
 ["./configure-upload-file.html","Customer Services &#62; Configure Upload File","On this page, you specify some of the attributes of the order upload file. The aim is to configure this page so that it corresponds to the structu...",""],
 ["./contact-us.html","Customer Services &#62; Contact Us","To contact PartsASIST support, you can submit a message on this page. The figure below shows how this page appears.",""],
 ["./customer-services.html","Customer Services","There are a number of administrative features in PartsASIST. This chapter covers the features found in the Customer Services menu:",""],
