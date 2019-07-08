@@ -40,7 +40,7 @@ pagedata = [ ["./accessing-partsasist.html","Accessing PartsASIST","Trucks Custo
 ["./all-makes.html","Catalog &#62; Explore All Makes","While the Genuine Catalog is specific to the Mack and/or Volvo trucks you have in your fleet, the All Makes Catalog contains parts information for...",""],
 ["./approval-tree.html","Customer Services &#62; Approval Tree Process","A Primary user can set order limits for any Normal user in your company. If a Normal user exceeds an order limit, the Primary user will receive an...",""],
 ["./cart.html","Cart","The cart contains all of the parts that a user is considering for purchase. In the cart, the availability of the parts is shown, along with any di...",""],
-["./check-out.html","Orders &#62; Check out","The check out is the final step in submitting an order. All prices, discounts and tax are added and the final cost for the order is summarized. Th...",""],
+["./check-out.html","Orders &#62; Check out","The check out is the final step in submitting an order. All prices, discounts and taxes are added and the final cost for the order is summarized. ...",""],
 ["./company-information.html","Customer Services &#62; Company Information","This page displays company information in several sections, including:",""],
 ["./company-user-management.html","Customer Services &#62; Company User Management","As a primary user in PartsASIST, you can invite others from your company to join PartsASIST. You can only invite a person who has a current Trucks...",""],
 ["./configure-upload-file.html","Customer Services &#62; Configure Upload File","On this page, you specify some of the attributes of the order upload file. The aim is to configure this page so that it corresponds to the structu...",""],
@@ -72,5 +72,5 @@ pagedata = [ ["./accessing-partsasist.html","Accessing PartsASIST","Trucks Custo
 ["./saved-list.html","Orders &#62; Saved Orders List","This feature makes it easy to reorder identical or similar orders by using order templates. An example of such an order would be the set of all fi...",""],
 ["./search.html","Advanced Search &#38; Filtering","As seen in the examples of the Quick Start articles in this guide, customers can use the fleet filter feature to search for parts that are for a p...",""],
 ["./terms-and-conditions.html","Customer Services &#62; Terms and Conditions","This page contains the terms and conditions to which all users must agree in order to use PartsASIST. The figure below depicts an example.",""],
-["./upload-file.html","Orders &#62; Upload File","Most fleet mgmt systems can generate an order, and then output that order to an Excel file.",""],
+["./upload-file.html","Orders &#62; Upload File","Most fleet management systems can generate an order, and then output that order to an Excel file.",""],
 ["./your-profile.html","Customer Services &#62; Your Profile","This page displays user information, including:  Customer Portal/Fleet Impact user ID First and Last Name E-mail address preference for how P...",""]];
